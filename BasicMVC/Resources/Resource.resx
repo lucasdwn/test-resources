@@ -165,4 +165,7 @@
   <data name="Save" xml:space="preserve">
     <value>Salvar</value>
   </data>
+  <data name="teste" xml:space="preserve">
+    <value>brasil</value>
+  </data>
 </root>

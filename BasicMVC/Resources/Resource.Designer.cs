@@ -203,5 +203,14 @@ namespace BasicMVC.Resources {
                 return ResourceManager.GetString("Save", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a brasil.
+        /// </summary>
+        public static string teste {
+            get {
+                return ResourceManager.GetString("teste", resourceCulture);
+            }
+        }
     }
 }
