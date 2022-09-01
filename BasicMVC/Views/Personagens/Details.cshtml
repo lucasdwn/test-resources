@@ -1,23 +1,24 @@
 ﻿@model BasicMVC.Models.Personagem
+@inject LanguageService localizer
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>@localizer.Get("Details")</h1>
 
 <div>
-    <h4>Personagem</h4>
+    <h4>@localizer.Get("Personagem")</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            @localizer.Get("Name")
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao)
+            @localizer.Get("Descricao")
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Descricao)
@@ -25,6 +26,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">@localizer.Get("Edit")</a> |
+    <a asp-action="Index">@localizer.Get("Back to List")</a>
 </div>

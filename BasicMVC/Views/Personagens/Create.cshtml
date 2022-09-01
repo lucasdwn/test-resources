@@ -1,36 +1,36 @@
 ﻿@model BasicMVC.Models.Personagem
-
+@inject LanguageService localizer
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>@localizer.Get("Create")</h1>
 
-<h4>Personagem</h4>
+<h4>@localizer.Get("Personagem")</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">@localizer.Get("Name")</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
+                <label asp-for="Descricao" class="control-label">@localizer.Get("Descricao")</label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="@localizer.Get("Create")" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@localizer.Get("Back to List")</a>
 </div>
 
 @section Scripts {

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using BasicMVC.Resources;
+using Microsoft.Extensions.Localization;
 using System.Reflection;
 
 namespace BasicMVC.Models
@@ -11,7 +12,7 @@ namespace BasicMVC.Models
         {
             var type = typeof(TestResource);
             var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
-            localizer = factory.Create(nameof(TestResource), assemblyName.Name);
+            localizer = factory.Create(nameof(Resource), assemblyName.Name);
         }
 
         public string Get(string key)

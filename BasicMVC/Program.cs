@@ -1,5 +1,6 @@
 using BasicMVC.Data;
 using BasicMVC.Models;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,10 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
  
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<LanguageService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>
     (options => options.UseSqlServer(connectionString));
+
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddMvc()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
 
 
 var app = builder.Build();

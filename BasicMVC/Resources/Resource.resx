@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back to list" xml:space="preserve">
+  <data name="Back to List" xml:space="preserve">
     <value>Voltar à lista</value>
   </data>
   <data name="Create" xml:space="preserve">
@@ -128,6 +128,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Deletar</value>
+  </data>
+  <data name="deletethis" xml:space="preserve">
+    <value>Tem certeza de que deseja excluir isso?</value>
   </data>
   <data name="Descricao" xml:space="preserve">
     <value>Descrição</value>
@@ -144,8 +147,20 @@
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
   </data>
+  <data name="Personagem" xml:space="preserve">
+    <value>Personagem</value>
+  </data>
   <data name="Personagens" xml:space="preserve">
     <value>Personagens</value>
+  </data>
+  <data name="ppolicy" xml:space="preserve">
+    <value>Use esta página para detalhar a política de privacidade do seu site.</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Política de Privacidade</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Salvar</value>

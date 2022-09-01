@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+@inject LanguageService localizer
+<h1>@localizer.Get("Privacy Policy")</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>@localizer.Get("ppolicy")</p>

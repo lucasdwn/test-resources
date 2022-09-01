@@ -63,9 +63,9 @@ namespace BasicMVC.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Voltar à lista.
         /// </summary>
-        public static string Back_to_list {
+        public static string Back_to_List {
             get {
-                return ResourceManager.GetString("Back to list", resourceCulture);
+                return ResourceManager.GetString("Back to List", resourceCulture);
             }
         }
         
@@ -93,6 +93,15 @@ namespace BasicMVC.Resources {
         public static string Delete {
             get {
                 return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tem certeza de que deseja excluir isso?.
+        /// </summary>
+        public static string deletethis {
+            get {
+                return ResourceManager.GetString("deletethis", resourceCulture);
             }
         }
         
@@ -142,11 +151,47 @@ namespace BasicMVC.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Personagem.
+        /// </summary>
+        public static string Personagem {
+            get {
+                return ResourceManager.GetString("Personagem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Personagens.
         /// </summary>
         public static string Personagens {
             get {
                 return ResourceManager.GetString("Personagens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Use esta página para detalhar a política de privacidade do seu site..
+        /// </summary>
+        public static string ppolicy {
+            get {
+                return ResourceManager.GetString("ppolicy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Privacidade.
+        /// </summary>
+        public static string Privacy {
+            get {
+                return ResourceManager.GetString("Privacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Política de Privacidade.
+        /// </summary>
+        public static string Privacy_Policy {
+            get {
+                return ResourceManager.GetString("Privacy Policy", resourceCulture);
             }
         }
         
